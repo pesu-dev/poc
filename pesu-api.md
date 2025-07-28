@@ -1,10 +1,14 @@
+> [!WARNING]  
+> Still under planning, do not make a merge request to `main`.
+
+
 # PESU API
 
 ## Introduction
 
 PESU API aims to expose all the functions available through the python library `pesuacademy-py`, which contains functions to access a variety of information from the PESU Academy website, by means of webscraping, in the form of a REST API. This results in the library functions becoming language agnostic, thus greatly increasing its usage scope.
 
-## ## Problem with REST APIs
+## Problem with REST APIs
 
 The only limiting factor in implementing this API, is that the `pesuacademy-py` library uses a stateful object to call its functions, which is against the stateless principle of REST. The only viable and reasonable solution for this, is to use JWTs to contain the session. Here’s a simple workflow of what to do:
 
