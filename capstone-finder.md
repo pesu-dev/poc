@@ -39,6 +39,7 @@ This project aims to help students find members for their capstone projects. Stu
 - `pesu-auth` fetches details for the student, and saves **SRN**, **name**, **branch**, **campus**, **email** and **phone** information
 - Email and phone are encrypted and saved in the database
 - Student then enters CGPA, gender and bio
+- Student can also optionally add social links like GitHub and LinkedIn for others to reach out
 - Student now gets a profile link to share with people
 - Student can enable and disable the "searching" switch, which hides profile when off
 
