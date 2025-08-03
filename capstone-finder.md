@@ -36,7 +36,8 @@ This project aims to help students find members for their capstone projects. Stu
 ### Student Signup
 
 - Student uses PESUAcademy credentials to sign in to `pesu-auth`
-- `pesu-auth` fetches details for the student, and saves **SRN**, **name**, **branch** and **campus** information only
+- `pesu-auth` fetches details for the student, and saves **SRN**, **name**, **branch**, **campus**, **email** and **phone** information
+- Email and phone are encrypted and saved in the database
 - Student then enters CGPA, gender and bio
 - Student now gets a profile link to share with people
 - Student can enable and disable the "searching" switch, which hides profile when off
@@ -46,14 +47,8 @@ This project aims to help students find members for their capstone projects. Stu
 - Another student signs up and visits "Find" page
 - Student selects campus, gender, branch and GPA range to filter students
 - Student can optionally search for someone with name
-- Once a suitable member is found, student can either save their profile to visit later, or send a message requesting to chat
-
-### Student Chat
-
-- Student can view requests to chat and accept or decline
-- Students can ask each other questions related to project and ideas
-- If both are in agreement, contact details such as capstone group link can be sent
-- Both students can then set "Searching" to off in profile
+- Once a suitable member is found, student can either save their profile to visit later, or send a request for contact details
+- The student gets an email to either approve or share their contact details
 
 ### Moderation
 
@@ -63,7 +58,6 @@ This project aims to help students find members for their capstone projects. Stu
 
 ### Cron jobs
 
-- Weekly cron job: Deletes chats
 - Biannual cron job: Deletes inactive accounts (based on last login time)
 
 ---
