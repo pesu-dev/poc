@@ -38,7 +38,7 @@ This project aims to help students find members for their capstone projects. Stu
 - Student uses PESUAcademy credentials to sign in to `pesu-auth`
 - `pesu-auth` fetches details for the student, and saves **SRN**, **name**, **branch**, **campus**, **email** and **phone** information
 - Email and phone are encrypted and saved in the database
-- Student then enters CGPA, gender and bio
+- Student then enters CGPA, gender and bio, and optionally uploads a resume
 - Student can also optionally add social links like GitHub and LinkedIn for others to reach out
 - Student now gets a profile link to share with people
 - Student can enable and disable the "searching" switch, which hides profile when off
@@ -53,17 +53,9 @@ This project aims to help students find members for their capstone projects. Stu
 
 ### Moderation
 
-- Admin accounts exist, which have complete control over all accounts, but cannot view chats
-- Students can report chats, which can be seen by admins and the target student's account may be suspended or banned
+- Admin accounts exist, which have complete control over all accounts
 - Admins can also take down accounts based on profile data
 
 ### Cron jobs
 
 - Biannual cron job: Deletes inactive accounts (based on last login time)
-
----
-
-## Add-ons
-
-- Simple end-to-end encryption for student chats
-- Resume uploading
